@@ -304,6 +304,7 @@
 
 
     <script>
+      const cancel = document.querySelector(".fa-xmark")
         const menu = document.querySelector(".menu");
         const navlist = document.querySelector(".navlist");
          const moment = {
@@ -344,6 +345,10 @@
     })
 
     menu.addEventListener("click", () => {
+    navlist.classList.toggle("nav");
+});
+
+    cancel.addEventListener("click", () => {
     navlist.classList.toggle("nav");
 });
 
