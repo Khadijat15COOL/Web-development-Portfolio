@@ -1126,9 +1126,10 @@ p,span {
     .menu, .fa-xmark
     {
         display: block;
-        color: var(--first-color);
+        color: var(--first-color-dark);
         font-size: 1.5rem;
         cursor: pointer;
+        z-index: 1000;
     }
 
     .fa-xmark
@@ -1142,6 +1143,10 @@ p,span {
         font-weight: 400;
         font-size: var(--h1-font-size);
     }
+/* 
+    .activelink:hover .fa-xmark{
+        color: var(--white);
+    } */
 }
 
 @media screen and (max-width: 573px) {
